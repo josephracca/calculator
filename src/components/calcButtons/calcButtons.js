@@ -25,7 +25,8 @@ class CalcButtonGroup extends React.Component {
       //checks to see if the number is finished, needs to be called when the operations are clicked, committing the string to memory
       numSet: false,
       //showResults: boolean that shows result, would be set to false if everything has been cleared, or if the next number is being typed in...
-      showResult: false,
+      // showResult: false,
+      display: "",
     };
   }
 
@@ -35,6 +36,7 @@ class CalcButtonGroup extends React.Component {
     // so the bool will remain false since it's not yet set, the operation symbols will set it to true
     if (!this.state.numSet) {
       this.setState({ num1: (this.state.num1 += newValue) });
+      // this.setState({ display: (this.state.display += newValue) });
     } else {
       this.setState({ num2: (this.state.num2 += newValue) });
       console.log(this.state.num2);
@@ -121,23 +123,21 @@ class CalcButtonGroup extends React.Component {
         break;
     }
   };
-  DisplayValue() {
-
-  }
+  DisplayValue() {}
 
   //================TO RENDER ON DOM================//
   render() {
     return (
       <Container>
-        <NumberDisplay message="Hello there..." />
+        {/* <NumberDisplay message="Hello there..." /> */}
 
         {/* //need to toggle the displays or have the message be replaced once the operation is set...  */}
 
-        {/* <Row>
+        <Row>
           <Col className="d-flex justify-content-center">
-            <NumberDisplay message={this.state.num1} />
+            <NumberDisplay message={this.state.display} />
           </Col>
-        </Row> */}
+        </Row>
 
         <Row>
           <Col className="d-flex justify-content-center">
