@@ -149,143 +149,47 @@ class CalcButtonGroup extends React.Component {
                   : !this.state.num2
                   ? this.state.num1
                   : this.state.num2
-              }
-            />
+              }/>
           </Col>
         </Row>
         <Row>
           <Col className="mt-5">
-            <SingleButton
-              className="m-2 equalWidth"
-              variation={"danger"}
-              onClick={this.ClearAll}
-              value={"c"}
-            />
-            <SingleButton
-              className="m-2 equalWidth"
-              variation={"warning"}
-              onClick={this.NegativeSwitch}
-              value={"±"}
-            />
-            <SingleButton
-              className="m-2 equalWidth"
-              variation={"warning"}
-              onClick={this.SetOperation}
-              value={"%"}
-            />
-            <SingleButton
-              className="m-2 equalWidth"
-              variation={"info"}
-              onClick={this.SetOperation}
-              value={"÷"}
-            />
+            <SingleButton className="m-2 equalWidth" variation={"danger"} onClick={this.ClearAll} value={"c"}/>
+            <SingleButton className="m-2 equalWidth" variation={"warning"} onClick={this.NegativeSwitch} value={"±"}/>
+            <SingleButton className="m-2 equalWidth" variation={"warning"} onClick={this.SetOperation} value={"%"}/>
+            <SingleButton className="m-2 equalWidth" variation={"info"} onClick={this.SetOperation} value={"÷"}/>
           </Col>
         </Row>
         <Row>
           <Col>
             {/* why do the number values get wrapped in curly braces? */}
-            <SingleButton
-              className="m-2 equalWidth"
-              variation={"dark"}
-              onClick={this.SetNum}
-              value={7}
-            />
-            <SingleButton
-              className="m-2 equalWidth"
-              variation={"dark"}
-              onClick={this.SetNum}
-              value={8}
-            />
-            <SingleButton
-              className="m-2 equalWidth"
-              variation={"dark"}
-              onClick={this.SetNum}
-              value={9}
-            />
-            <SingleButton
-              className="m-2 equalWidth"
-              variation={"info"}
-              onClick={this.SetOperation}
-              value={"×"}
-            />
+            <SingleButton className="m-2 equalWidth" variation={"dark"} onClick={this.SetNum} value={7}/>
+            <SingleButton className="m-2 equalWidth" variation={"dark"} onClick={this.SetNum} value={8}/>
+            <SingleButton className="m-2 equalWidth" variation={"dark"} onClick={this.SetNum} value={9}/>
+            <SingleButton className="m-2 equalWidth" variation={"info"} onClick={this.SetOperation} value={"×"}/>
           </Col>
         </Row>
         <Row>
           <Col>
-            <SingleButton
-              className="m-2 equalWidth"
-              variation={"dark"}
-              onClick={this.SetNum}
-              value={4}
-            />
-            <SingleButton
-              className="m-2 equalWidth"
-              variation={"dark"}
-              onClick={this.SetNum}
-              value={5}
-            />
-            <SingleButton
-              className="m-2 equalWidth"
-              variation={"dark"}
-              onClick={this.SetNum}
-              value={6}
-            />
-            <SingleButton
-              className="m-2 equalWidth"
-              variation={"info"}
-              onClick={this.SetOperation}
-              value={"-"}
-            />
+            <SingleButton className="m-2 equalWidth" variation={"dark"} onClick={this.SetNum} value={4}/>
+            <SingleButton className="m-2 equalWidth" variation={"dark"} onClick={this.SetNum} value={5}/>
+            <SingleButton className="m-2 equalWidth" variation={"dark"} onClick={this.SetNum} value={6}/>
+            <SingleButton className="m-2 equalWidth" variation={"info"} onClick={this.SetOperation} value={"-"}/>
           </Col>
         </Row>
         <Row>
           <Col>
-            <SingleButton
-              className="m-2 equalWidth"
-              variation={"dark"}
-              onClick={this.SetNum}
-              value={1}
-            />
-            <SingleButton
-              className="m-2 equalWidth"
-              variation={"dark"}
-              onClick={this.SetNum}
-              value={2}
-            />
-            <SingleButton
-              className="m-2 equalWidth"
-              variation={"dark"}
-              onClick={this.SetNum}
-              value={3}
-            />
-            <SingleButton
-              className="m-2 equalWidth"
-              variation={"info"}
-              onClick={this.SetOperation}
-              value={"+"}
-            />
+            <SingleButton className="m-2 equalWidth" variation={"dark"} onClick={this.SetNum} value={1}/>
+            <SingleButton className="m-2 equalWidth" variation={"dark"} onClick={this.SetNum} value={2}/>
+            <SingleButton className="m-2 equalWidth" variation={"dark"} onClick={this.SetNum} value={3}/>
+            <SingleButton className="m-2 equalWidth" variation={"info"} onClick={this.SetOperation} value={"+"}/>
           </Col>
         </Row>
         <Row>
           <Col>
-            <SingleButton
-              className="m-2 double"
-              variation={"dark"}
-              onClick={this.SetNum}
-              value={0}
-            />
-            <SingleButton
-              className="m-2 equalWidth"
-              variation={"dark"}
-              onClick={this.SetNum}
-              value={"."}
-            />
-            <SingleButton
-              className="m-2 equalWidth"
-              variation={"success"}
-              onClick={this.QuickMath}
-              value={"="}
-            />
+            <SingleButton className="m-2 double" variation={"dark"} onClick={this.SetNum} value={0}/>
+            <SingleButton className="m-2 equalWidth" variation={"dark"} onClick={this.SetNum} value={"."}/>
+            <SingleButton className="m-2 equalWidth" variation={"success"} onClick={this.QuickMath} value={"="}/>
           </Col>
         </Row>
       </Container>
