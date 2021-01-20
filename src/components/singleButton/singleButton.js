@@ -14,7 +14,7 @@ const SingleButton = (props) => {
     const handleClick = () => props.onClick(props.value)
 
     return (
-        <Button variant={props.variation} className="m-1 equalWidth" onClick={handleClick}>{props.value}</Button>
+        <Button variant={props.variation} className={props.className} onClick={handleClick}>{props.value}</Button>
     )
 }
 

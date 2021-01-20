@@ -3,8 +3,11 @@
 const NumberDisplay = (props) => {
 
     const displayScreen = {
-        backgroundColor: "gray",
-        color: "white"
+        // backgroundColor: "gray",
+        color: "white",
+        fontSize: "100px",
+        lineHeight: "90px",
+
     }
 
     return(
