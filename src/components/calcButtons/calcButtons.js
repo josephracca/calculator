@@ -132,17 +132,9 @@ class CalcButtonGroup extends React.Component {
     }
     this.setState({ operation: "" });
   };
-  DisplayValue() {
-    if (!this.state.num1) {
-      return "0";
-    } else if (this.state.operation !== "") {
-      return this.state.num2;
-    }
-  }
 
   //IMPROVEMENTS:
   // *** in order to get the calculations working, setNum has to clear the information if the operation has not been set...
-  //in order to chain operations, the operation buttons have to work like the equal buttons, so it will automatically evaluate what has come before it...
 
   //================TO RENDER ON DOM================//
   render() {
